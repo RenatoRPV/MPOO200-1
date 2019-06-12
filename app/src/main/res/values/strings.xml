@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">RenatoRPV</string>
+    <string name="reg_error_empty_name">Empty Nome!</string>
+    <string name="reg_error_empty_email">Empty Email!</string>
+    <string name="reg_error_empty_pass">Empty senha!</string>
+    <string name="reg_error_blank_space_pass">Espaços em branco não são permitidos!</string>
+    <string name="reg_error_invalid_email">Invalid email!</string>
+    <string name="reg_error_diff_pass">Senhas não combinam!</string>
+    <string name="reg_error_nopair_biosensor">Falta par biossensor e/ou para coletar dados biológicos</string>
+    <string name="reg_completed">Registro concluído com sucesso</string>
+    <string name="reg_search_biosensor">Pesquisando biossensor.Por favor, espere…</string>
+    <string name="reg_biosensor_paired">Biosensor emparelhado</string>
+    <string name="reg_biodata_already_collected">Dados biológicos já coletados</string>
+    <string name="reg_collecting_biodata">Nós estamos coletando seus dados biológicos. Por favor, espere…</string>
+    <string name="reg_biodata_collected">Dados biológicos coletados</string>
+    <string name="login_enter_email">Entre email!</string>
+    <string name="login_enter_pass">Entre senha!</string>
+    <string name="login_to_be_impl">Devem ser implementados…</string>
+    <string name="main_pair_new_biosensor">Emparelhamento novo biossensor.Por favor,espere…</string>
+    <string name="search_pretext">A melhor opção para você é:</string>
+    <string name="email_field_hint">Email</string>
+    <string name="btn_login_text">Login</string>
+    <string name="btn_facebook_login_text">Facebook</string>
+    <string name="btn_google_login_text">Google+</string>
+    <string name="link_register_users">Nenhum nome de usuário ou senha? Clique aqui!</string>
+    <string name="name_field_hint">Nome</string>
+    <string name="repeat_password_field_hint">Repita a senha</string>
+    <string name="btn_pair_biosensor_text">Biosensor</string>
+    <string name="btn_collect_biological_data_text">Coletar dados biológicos</string>
+    <string name="btn_submit_text">Submeter</string>
+    <string name="btn_show_biological_profile_text">Mostrar perfil biológico</string>
+    <string name="btn_recommend_remedy_text">Recomendo remédio</string>
+    <string name="text_select_your_symptom">Selecione seu Sintoma</string>
+    <string name="btn_find_text">Encontrar</string>
+    <string name="img_user_photo_descr">User photo</string>
+    <string name="img_RenatoRPV_logo_descr">RenatoRPV logo</string>
+
+    <string-array name="sintomas">
+        <item>Náusea</item>
+        <item>Dor de cabeça</item>
+        <item>Dor de estômago</item>
+        <item> Gripe</item>
+    </string-array>
+    <string name="password_field_hint">Senha</string>
+</resources>

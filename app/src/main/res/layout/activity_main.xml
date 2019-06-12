@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@color/backgroundRenatoRPV"
+    tools:context="com.renato.renatoRPV.gui.MainActivity">
+
+    <ImageView
+        android:id="@+id/main_imagem_usuario"
+        android:contentDescription="@string/img_user_photo_descr"
+        android:layout_width="128dp"
+        android:layout_height="128dp"
+        android:layout_marginTop="36dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/user_photo_default"/>
+
+    <Button
+        android:id="@+id/main_btn_cadastrar_biosensor"
+        android:text="@string/btn_pair_biosensor_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@color/buttonColor"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:elegantTextHeight="false"
+        android:focusable="false"
+        android:onClick="onButtonClickMain"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/main_btn_perfil_biologico"
+        android:text="@string/btn_show_biological_profile_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@color/buttonColor"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="18dp"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_btn_cadastrar_biosensor"
+        android:onClick="onButtonClickMain"/>
+
+    <Button
+        android:id="@+id/main_btn_recomendar_medicamento"
+        android:text="@string/btn_recommend_remedy_text"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:padding="5dp"
+        android:background="@color/buttonColor"
+        android:layout_width="104dp"
+        android:layout_height="104dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="18dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/main_btn_cadastrar_biosensor"
+        android:onClick="onButtonClickMain" />
+
+</RelativeLayout>
