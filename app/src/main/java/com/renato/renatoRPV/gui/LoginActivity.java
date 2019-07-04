@@ -73,13 +73,7 @@ public class LoginActivity extends AppCompatActivity {
 
         }
 
-        else if (v.getId() == R.id.btn_login_facebook) {
-            guiUtil.toastShort(getApplicationContext(), getString(R.string.login_to_be_impl));
-        }
 
-        else if (v.getId() == R.id.btn_login_google) {
-            guiUtil.toastShort(getApplicationContext(), getString(R.string.login_to_be_impl));
-        }
 
         else if (v.getId() == R.id.link_cadastro_usuario) {
             Intent Int = new Intent(getApplicationContext(), CadastroUsuarioActivity.class);

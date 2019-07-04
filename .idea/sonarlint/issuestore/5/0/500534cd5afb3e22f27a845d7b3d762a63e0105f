@@ -1,0 +1,7 @@
+
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿Ü÷‡
+usquid:S00116"]Rename this field "prevenÃ§Ã£oDsaÃºde" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÑôÉ
+ksquid:UselessImportCheck
+"BRemove this unused import 'com.renato.renatoRPV.dao.Dev00Pedrosa'.(»ü¦‘øÿÿÿÿ
+Bsquid:S1068"+Remove this unused "guiUtil" private field.(ããƒÖ
+esquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(º‹ÏÄ

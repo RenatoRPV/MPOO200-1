@@ -14,7 +14,8 @@ public class Dev00Drug {
         this.name = name;
     }
 
-    public String getApplication() {
+    public String getApplication()
+    {
         return application;
     }
 

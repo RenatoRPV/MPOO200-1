@@ -17,7 +17,8 @@ public class Dev00Sessao {
         return instancia;
     }
 
-    public Date getHoraLogin() {
+    public Date getHoraLogin()
+    {
         return horaLogin;
     }
 
@@ -31,10 +32,12 @@ public class Dev00Sessao {
     }
 
     public Dev00Usuario getUsuario() {
+
         return usuario;
     }
 
     public void setUsuario(Dev00Usuario usuario) {
+
         this.usuario = usuario;
     }
 }

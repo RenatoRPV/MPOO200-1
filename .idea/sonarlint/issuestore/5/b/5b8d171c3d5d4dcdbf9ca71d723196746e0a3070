@@ -1,0 +1,6 @@
+
+esquid:S1192-"NDefine a constant instead of duplicating this literal "INSERT INTO " 12 times.(ïôÂþ
+{squid:S1192R"_Define a constant instead of duplicating this literal "VALUES ('Febre', 'Gripe', '');" 3 times.(³ØŸ–ûÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ôŸ›Ýùÿÿÿÿ
+hsquid:S1192 "QDefine a constant instead of duplicating this literal " TEXT NOT NULL, " 5 times.(óÆŸž
+‚squid:S1192-"kDefine a constant instead of duplicating this literal " (name, application, biological_profile) " 12 times.(ïôÂþ

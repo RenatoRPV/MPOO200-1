@@ -49,7 +49,7 @@ public class Dev00Pedrosa {
             int indexColumnPerfBio = cursor.getColumnIndex(perfBioColumn);
             String perfBio = cursor.getString(indexColumnPerfBio);
 
-            if (Objects.equals(perfBio, "0")) {
+            if (Objects.equals(perfBio,"0")) {
                 usuario = new Dev00Usuario();
                 usuario.setId(id);
                 usuario.setNome(name);
@@ -223,7 +223,7 @@ public class Dev00Pedrosa {
 
         Cursor cursor = db.rawQuery(comando, argumentos);
 
-        Dev00Drug drug = null;
+        Dev00Drug droga = null;
 
         if(cursor.moveToNext()){
             String idColumn= Dev00DatabaseHelper.COLUMN_ID;
@@ -242,12 +242,12 @@ public class Dev00Pedrosa {
             int indexColumnPerfBio = cursor.getColumnIndex(perfBioColumn);
             String bioProfile = cursor.getString(indexColumnPerfBio);
 
-            drug = criarDrugObject(id, name, application, bioProfile);
+            droga = criarDrugObject(id, name, application, bioProfile);
         }
         cursor.close();
         db.close();
 
-        return drug;
+        return droga;
     }
 
     private Dev00PerfilBiologico criarPerfilBiologicoObject(String sequencia) {
@@ -257,11 +257,11 @@ public class Dev00Pedrosa {
     }
 
     private Dev00Drug criarDrugObject(long id, String name, String application, String bioProfile) {
-        Dev00Drug drug = new Dev00Drug();
-        drug.setId(id);
-        drug.setName(name);
-        drug.setApplication(application);
-        drug.setBioProfile(bioProfile);
-        return drug;
+        Dev00Drug droga = new Dev00Drug();
+        droga.setId(id);
+        droga.setName(name);
+        droga.setApplication(application);
+        droga.setBioProfile(bioProfile);
+        return droga;
     }
 }

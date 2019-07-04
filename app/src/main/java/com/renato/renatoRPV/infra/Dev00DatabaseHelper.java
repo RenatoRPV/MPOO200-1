@@ -15,7 +15,7 @@ public class Dev00DatabaseHelper extends SQLiteOpenHelper {
     public static final String COLUMN_PASS = "pass";
     public static final String COLUMN_DNASEQ = "dna_seq";
 
-    public static final String TABLE_DRUG = "drug";
+    public static final String TABLE_DRUG = "droga";
     public static final String COLUMN_APPLICATION = "application";
     public static final String COLUMN_BIOPROF = "biological_profile";
 
@@ -43,39 +43,51 @@ public class Dev00DatabaseHelper extends SQLiteOpenHelper {
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('HeadDrug', 'Náusea', 'CTGGTGGT');");
+                        "VALUES ('Droga Principal', 'Dor de cabeça', 'CTGGTGGT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('NoHeadPain', 'Náusea', 'CACAGCCT');");
+                        "VALUES ('Sem dor de cabeça', 'Dor de cabeça', 'CACAGCCT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('HeadFree', 'Náusea', 'ATCTTCAA');");
+                        "VALUES ('Cabeça dor', 'Dor de cabeça', 'ATCTTCAA');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('NauseaStop', '>Dor de cabeça', 'CTGGTGGT');");
+                        "VALUES (' Náusea', 'Náusea', 'CTGGTGGT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('NoNausea', '>Dor de cabeça', 'CACAGCCT');");
+                        "VALUES ('Sem náuseas', 'Náusea', 'CACAGCCT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('Nauseastamin', '>Dor de cabeça', 'ATCTTCAA');");
+                        "VALUES ('Náusea Forte', 'Náusea', 'ATCTTCAA');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('StomachPeace', 'Dor de estômago', 'CTGGTGGT');");
+                        "VALUES ('Dor no estômago', 'Dor de estômago', 'CTGGTGGT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('Stomachflex', 'Dor de estômago', 'CACAGCCT');");
+                        "VALUES ('Queimor no Estômago ', 'Dor de estômago', 'CACAGCCT');");
 
         sqLiteDatabase.execSQL(
                 "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
-                        "VALUES ('HealStomach', 'Dor de estômago', 'ATCTTCAA');");
+                        "VALUES ('Curar p/ Estômago', 'Dor de estômago', 'ATCTTCAA');");
+
+        sqLiteDatabase.execSQL(
+                "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
+                        "VALUES ('Febre', 'Gripe', '');");
+
+        sqLiteDatabase.execSQL(
+                "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
+                        "VALUES ('Febre', 'Gripe', '');");
+
+        sqLiteDatabase.execSQL(
+                "INSERT INTO " + TABLE_DRUG + " (name, application, biological_profile) " +
+                        "VALUES ('Febre', 'Gripe', '');");
 
     }
 

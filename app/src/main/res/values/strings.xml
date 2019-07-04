@@ -20,8 +20,6 @@
     <string name="search_pretext">A melhor opção para você é:</string>
     <string name="email_field_hint">Email</string>
     <string name="btn_login_text">Login</string>
-    <string name="btn_facebook_login_text">Facebook</string>
-    <string name="btn_google_login_text">Google+</string>
     <string name="link_register_users">Nenhum nome de usuário ou senha? Clique aqui!</string>
     <string name="name_field_hint">Nome</string>
     <string name="repeat_password_field_hint">Repita a senha</string>

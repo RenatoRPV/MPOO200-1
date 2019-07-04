@@ -3,7 +3,8 @@ package com.renato.renatoRPV.dominio;
 public class Dev00PerfilBiologicoEnum {
 
     public enum Caracteristica {
-        X("CTGGTGGT"), Y("CACAGCCT"), Z("ATCTTCAA");
+        A("CTGGTGGT"), B("CACAGCCT"), C("ATCTTCAA"), D("ATCTTCAA");
+
         private String sequencia;
 
         Caracteristica(String sequencia) {

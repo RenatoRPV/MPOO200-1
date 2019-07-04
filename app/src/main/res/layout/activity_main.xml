@@ -8,7 +8,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/backgroundRenatoRPV"
-    tools:context="com.renato.renatoRPV.gui.MainActivity">
+    tools:context="com.renato.renatoRPV.gui.MainActivity" >
 
     <ImageView
         android:id="@+id/main_imagem_usuario"
@@ -18,7 +18,8 @@
         android:layout_marginTop="36dp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:src="@mipmap/user_photo_default"/>
+        android:src="@mipmap/user_photo_perfil"
+        />
 
     <Button
         android:id="@+id/main_btn_cadastrar_biosensor"
@@ -33,7 +34,8 @@
         android:focusable="false"
         android:onClick="onButtonClickMain"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        />
 
     <Button
         android:id="@+id/main_btn_perfil_biologico"
@@ -49,7 +51,8 @@
         android:layout_alignParentStart="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/main_btn_cadastrar_biosensor"
-        android:onClick="onButtonClickMain"/>
+        android:onClick="onButtonClickMain"
+        />
 
     <Button
         android:id="@+id/main_btn_recomendar_medicamento"
@@ -65,6 +68,7 @@
         android:layout_alignParentEnd="true"
         android:layout_centerHorizontal="true"
         android:layout_below="@id/main_btn_cadastrar_biosensor"
-        android:onClick="onButtonClickMain" />
+        android:onClick="onButtonClickMain"
+        />
 
 </RelativeLayout>

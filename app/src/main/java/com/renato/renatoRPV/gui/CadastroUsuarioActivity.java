@@ -118,4 +118,7 @@ public class CadastroUsuarioActivity extends AppCompatActivity {
             }
         }
     }
+
+    public void onClickLogin(View view) {
+    }
 }

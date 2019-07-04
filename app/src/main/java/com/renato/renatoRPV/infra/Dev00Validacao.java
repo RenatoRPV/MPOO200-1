@@ -10,6 +10,7 @@ public class Dev00Validacao {
     private static Dev00Validacao validacaoUtil = new Dev00Validacao();
 
     private Dev00Validacao(){
+        return;
     }
 
     public static Dev00Validacao getValidacaoUtil(){

@@ -9,8 +9,9 @@ public class Dev00GuiUtil {
     private Dev00GuiUtil(){
     }
 
-    public static Dev00GuiUtil getGuiUtil(){
+    public static Dev00GuiUtil getGuiUtil() {
         return guiUtil;
+
     }
 
     public void toastLong(Context context, String texto){

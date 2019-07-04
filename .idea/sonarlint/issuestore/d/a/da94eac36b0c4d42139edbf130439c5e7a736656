@@ -1,0 +1,5 @@
+
+squid:S1186z"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(İ¢Á°ıÿÿÿÿ
+hsquid:S3776"RRefactor this method to reduce its Cognitive Complexity from 32 to the 15 allowed.(¤À˜
+jsquid:MaximumInheritanceDepth"<This class has 7 parents which is greater than 5 authorized.(âˆÂáüÿÿÿÿ
+rsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(¿Ü÷‡

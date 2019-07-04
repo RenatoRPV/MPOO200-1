@@ -8,17 +8,18 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:background="@color/backgroundRenatoRPV"
-    tools:context="com.renato.renatoRPV.gui.LoginActivity">
+    tools:context="com.renato.renatoRPV.gui.CadastroUsuarioActivity" >
 
     <ImageView
-        android:id="@+id/logo_personal_health"
-        android:contentDescription="@string/img_RenatoRPV_logo_descr"
-        android:src="@mipmap/logo_phealth"
+        android:id="@+id/logo_renatoRPV"
         android:layout_width="match_parent"
         android:layout_height="75dp"
-        android:layout_marginBottom="48dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginTop="48dp"
-        android:layout_gravity="center_horizontal" />
+        android:layout_marginBottom="48dp"
+        android:contentDescription="@string/img_RenatoRPV_logo_descr"
+        android:src="@mipmap/logo_renatorpv"
+        />
 
     <EditText
         android:id="@+id/login_email"
@@ -27,8 +28,9 @@
         android:inputType="textEmailAddress"
         android:layout_marginTop="24dp"
         android:layout_marginBottom="24dp"
-        android:layout_below="@id/logo_personal_health"
-        android:hint="@string/email_field_hint"/>
+        android:layout_below="@id/logo_renatoRPV"
+        android:hint="@string/email_field_hint"
+        android:autofillHints="" />
 
     <EditText
         android:id="@+id/login_senha"
@@ -49,32 +51,29 @@
         android:padding="16dp"
         android:layout_below="@+id/login_senha"
         android:layout_centerHorizontal="true"
-        android:onClick="onClickLogin"/>
+        android:onClick="onClickLogin" />
+
 
     <Button
         android:id="@+id/btn_login_facebook"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_facebook_login_text"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/buttonColorFacebook"
         android:onClick="onClickLogin"
         android:layout_alignTop="@+id/login_btn"
         android:layout_alignParentStart="true" />
 
     <Button
-        android:id="@+id/btn_login_google"
+        android:id="@+id/btn_login_twitter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/btn_google_login_text"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:background="@color/buttonColorGoogle"
-        android:layout_alignTop="@+id/btn_login_facebook"
         android:layout_alignParentEnd="true"
         android:layout_alignBottom="@+id/btn_login_facebook"
-        android:onClick="onClickLogin"/>
+        android:onClick="onClickLogin"
+        />
 
     <TextView
         android:id="@+id/link_cadastro_usuario"
@@ -85,8 +84,9 @@
         android:textStyle="bold"
         android:gravity="center_horizontal"
         android:layout_marginTop="47dp"
-        android:layout_below="@+id/btn_login_google"
+        android:layout_below="@+id/btn_login_twitter"
         android:layout_centerHorizontal="true"
-        android:onClick="onClickLogin"/>
+        android:onClick="onClickLogin"
+        />
 
 </RelativeLayout>

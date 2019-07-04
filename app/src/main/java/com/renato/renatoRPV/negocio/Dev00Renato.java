@@ -8,21 +8,22 @@ import com.renato.renatoRPV.dominio.Dev00PerfilBiologico;
 import com.renato.renatoRPV.dominio.Dev00Usuario;
 import com.renato.renatoRPV.infra.Dev00Sessao;
 
-public  class Dev00Renato{
+public  class Dev00Renato {
     private Dev00Sessao sessao = Dev00Sessao.getInstancia();
-    private Dev00Pedrosa Dev00PedrosaDAO;
+    private Dev00Pedrosa dev00PedrosaDAO;
 
     public Dev00Renato(Context context) {
-        Dev00PedrosaDAO = new Dev00Pedrosa(context);
+        dev00PedrosaDAO = new Dev00Pedrosa(context);
 
     }
 
     public void cadastrarUsuario(String nome, String email, String senha, Dev00PerfilBiologico perfilBiologico)
-            throws Exception{ sessao.reset();
+            throws Exception {
+        sessao.reset();
 
-        Dev00Usuario usuario = Dev00PedrosaDAO.getUsuario(email);
+        Dev00Usuario usuario = dev00PedrosaDAO.getUsuario(email);
 
-        if (usuario!=null){
+        if (usuario != null) {
             throw new Exception("E-mail já registrado");
         }
 
@@ -32,7 +33,7 @@ public  class Dev00Renato{
         usuario.setPass(senha);
         usuario.setPerfBio(perfilBiologico);
 
-        long idUsuario = Dev00PedrosaDAO.inserir(usuario);
+        long idUsuario = dev00PedrosaDAO.inserir(usuario);
 
         usuario.setId(idUsuario);
 
@@ -41,11 +42,12 @@ public  class Dev00Renato{
     }
 
     public Dev00Usuario login(String email, String senha)
-            throws Exception{ sessao.reset();
+            throws Exception {
+        sessao.reset();
 
-        Dev00Usuario usuario = Dev00PedrosaDAO.getUsuario(email, senha);
+        Dev00Usuario usuario = dev00PedrosaDAO.getUsuario(email, senha);
 
-        if(usuario==null) {
+        if (usuario == null) {
             throw new Exception("E-mail ou senha inválida");
         }
 
@@ -54,11 +56,12 @@ public  class Dev00Renato{
         return usuario;
     }
 
-    public void setDev00PerfilBiologico(Dev00Usuario usuario, Dev00PerfilBiologico perfilBiologico) {
-        Dev00PedrosaDAO.cadastrarPerfilBiologico(usuario, perfilBiologico);
+    public Dev00Drug getBestOption(String sintoma, String perfBio) {
+        return dev00PedrosaDAO.getBestOption(sintoma, perfBio);
     }
 
-    public Dev00Drug getBestOption(String sintoma, String perfBio) {
-        return Dev00PedrosaDAO.getBestOption(sintoma, perfBio);
+    public void setDev00PerfilBiologico(Dev00Usuario usuario, Dev00PerfilBiologico perfilBiologico) {
+       this.dev00PedrosaDAO.cadastrarPerfilBiologico(usuario, perfilBiologico);
     }
+
 }

@@ -1,0 +1,13 @@
+
+Usquid:S1854º"8Remove this useless assignment to local variable "name".(Ö—–ßúÿÿÿÿ
+?squid:S1481¶"'Remove this unused "id" local variable.(´×™­
+Asquid:S1481Â")Remove this unused "pass" local variable.(İÁÕß
+Vsquid:S1854¾"9Remove this useless assignment to local variable "email".(¶èóËıÿÿÿÿ
+dsquid:S1192"HDefine a constant instead of duplicating this literal " LIKE ?" 4 times.(ïÇşüÿÿÿÿ
+ksquid:S1192"ODefine a constant instead of duplicating this literal "SELECT * FROM " 4 times.(¸ñ½üûÿÿÿÿ
+Psquid:S1854Â"8Remove this useless assignment to local variable "pass".(İÁÕß
+Fsquid:S1481º")Remove this unused "name" local variable.(Ö—–ßúÿÿÿÿ
+Gsquid:S1481¾"*Remove this unused "email" local variable.(¶èóËıÿÿÿÿ
+dsquid:S1192"HDefine a constant instead of duplicating this literal " WHERE " 4 times.(ïÇşüÿÿÿÿ
+wsquid:S00120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Ö¹æùÿÿÿÿ
+Nsquid:S1854¶"6Remove this useless assignment to local variable "id".(´×™­
